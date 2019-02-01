@@ -1,0 +1,73 @@
+.searchBar {
+  outline: none;
+}
+
+.searchBar input {
+  background-color: hsla(17, 71%, 82%, .25);
+  border: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  outline: none;
+  padding-left: 25px;
+}
+
+.searchBar button {
+  visibility: hidden
+}
+
+.searchBar:focus-within .hits {
+  display: flex;
+}
+
+.hits {
+  display: none;
+  position: absolute;
+  margin-top: 18px;
+  border-radius: 4px !important;
+  background: #fff;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  outline: none;
+  overflow: hidden;
+  min-width: 176px;
+}
+
+.hits .ais-Hits.ais-Hits--empty {
+  color: #000 !important;
+  text-align: center !important;
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.hits ol {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.hits ol li {
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+}
+
+.hit {
+  color: #000 !important;
+  padding: 15px 20px;
+}
+
+.hit a {
+  color: inherit !important;
+}
+
+.hit:hover {
+  background: #f7f7f7;
+}
+
+.hit a:hover {
+  background: transparent !important;
+}

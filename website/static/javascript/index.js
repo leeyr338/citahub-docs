@@ -21,12 +21,12 @@ function translateEnUs() {
     l.setAttribute('href', l.href.slice(0, -3))
   }
 }
+
 window.onload = () => {
   const welcome = '/welcome'
   const logoEl =
     document.querySelector(".fixedHeaderContainer a[href='/en-US']") ||
     document.querySelector(".fixedHeaderContainer a[href='/zh-CN']")
-  console.log(logoEl)
   logoEl.setAttribute('href', logoEl.href + welcome)
 
   // add edit on github
